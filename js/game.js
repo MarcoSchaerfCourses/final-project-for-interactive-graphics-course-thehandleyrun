@@ -648,11 +648,11 @@ enemiesHolder.prototype.spawnenemies = function(){
   var nenemies = game.level;
 
   for (var i=0; i<nenemies; i++){
-    var Enemy;
+    var enemy;
     if (enemiesPool.length) {
       Enemy = enemiesPool.pop();
     }else{
-      Enemy = new Enemy();
+      enemy = new Enemy();
     }
 
     Enemy.angle = - (i*0.1);
